@@ -12,13 +12,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { UnlockPageComponent } from './unlock-page/unlock-page.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeroSecComponent } from './hero-sec/hero-sec.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomePageComponent,
-    UnlockPageComponent
+    UnlockPageComponent,
+    FooterComponent,
+    HeroSecComponent
   ],
   imports: [
     BrowserModule,
