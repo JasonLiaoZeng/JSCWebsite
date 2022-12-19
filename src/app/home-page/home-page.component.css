@@ -1,0 +1,38 @@
+.contents{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div{
+    margin: auto;
+}
+
+h2 {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+video{
+    float: center;
+    width: 95%;
+    margin:auto;
+}
+
+.video_wrapper {
+    float: left;
+    min-width: 400px;
+    width: 50%;
+}
+
+.video_aligner{
+    float:left;
+    min-width: 400px;
+    width: 50%;
+    word-wrap: break-word;
+}

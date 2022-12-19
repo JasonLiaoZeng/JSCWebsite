@@ -7,21 +7,26 @@ img {
 }
 
 .hero-container {
-    background: url('../../assets/img/ucberkeley.jpeg') no-repeat center/cover fixed;
-    height: 90vh;
+    background: url('../../assets/img/hero-sec-1.png') no-repeat center/cover fixed;
+    height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
     object-fit: contain;
 }
 
 h1{
     color: white;
-    margin-top: 30%;
+    margin-top: 15%;
+    align-items: center;
+    font-size: 500%;
+    margin-bottom: 10px;
 }
 
 p{
+    margin-top: 0%;
     color: white;
+    font-size: 300%;
 }
