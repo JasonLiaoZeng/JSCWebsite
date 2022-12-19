@@ -14,6 +14,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { UnlockPageComponent } from './unlock-page/unlock-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroSecComponent } from './hero-sec/hero-sec.component';
+import { LoginCardComponent } from './login-card/login-card.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { HeroSecComponent } from './hero-sec/hero-sec.component';
     HomePageComponent,
     UnlockPageComponent,
     FooterComponent,
-    HeroSecComponent
+    HeroSecComponent,
+    LoginCardComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { HeroSecComponent } from './hero-sec/hero-sec.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
