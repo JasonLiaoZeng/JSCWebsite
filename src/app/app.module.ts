@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroSecComponent } from './hero-sec/hero-sec.component';
 import { LoginCardComponent } from './login-card/login-card.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

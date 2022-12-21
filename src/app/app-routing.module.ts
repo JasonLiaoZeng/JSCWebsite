@@ -4,7 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { UnlockPageComponent } from './unlock-page/unlock-page.component';
 
 const routes: Routes = [
-  {path: 'home_page', component: HomePageComponent},
+  {path: '' ,  component: HomePageComponent},
   {path: 'unlock_page', component: UnlockPageComponent}
 ];
 
