@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup} from '@angular/forms';
+import { FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-login-card',
@@ -8,10 +8,12 @@ import { FormControl, FormGroup} from '@angular/forms';
 })
 export class LoginCardComponent implements OnInit{
   code!: FormControl;
+  codeChecked!: Boolean;
   constructor(){}
 
   ngOnInit(){
-    this.code = new FormControl()
+    this.code = new FormControl('',[Validators.required])
+    this.codeChecked = false
   }
 
   checkCode(){

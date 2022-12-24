@@ -2,7 +2,7 @@
     <p>Please Enter Your Passcode or Initializing Code:</p>
     <mat-form-field>
         <input matInput [formControl]="code" type="password">
-        <mat-error>Invalid Code</mat-error>
+        <mat-error *ngIf="code.invalid">Code Invalid</mat-error>
     </mat-form-field>
     <button mat-button (click)="checkCode()"><p>Confirm</p></button>
 </div>

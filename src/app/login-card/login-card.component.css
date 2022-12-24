@@ -20,5 +20,8 @@ p{
 
 button {
     margin-bottom: 10px;
+}
 
+mat-error{
+    text-align:center;
 }
