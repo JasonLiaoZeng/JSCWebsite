@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators, AbstractControl} from '@angular/forms';
+import { FormControl, Validators, AbstractControl, NgForm} from '@angular/forms';
+import { MyErrorStateMatcher } from './my-error-state-matcher';
 
 @Component({
   selector: 'app-login-card',
@@ -8,28 +9,14 @@ import { FormControl, Validators, AbstractControl} from '@angular/forms';
 })
 export class LoginCardComponent implements OnInit{
   code!: FormControl;
+  myErrorStateMatcher = new MyErrorStateMatcher();
   constructor(){}
 
   ngOnInit(){
-    this.code = new FormControl('',{validators:[this.codeValidator]});
-  }
-
-   codeValidator(control: AbstractControl) : { [key: string]: boolean } | null {
-    if (control.value == "") {
-      return { 'code_invalid': true };
-    }
-    return null;
+    this.code = new FormControl('');
   }
   
   submit(){
     console.log(this.code.value);
   } 
 }
-
-/*function codeValidator(control: AbstractControl): { [key: string]: boolean } | null {
-
-  if (control.value == "") {
-      return { 'code_invalid': true };
-  }
-  return null;
-} */

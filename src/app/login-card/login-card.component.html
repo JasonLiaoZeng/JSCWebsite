@@ -1,9 +1,14 @@
 <div class="container">
     <p>Please Enter Your Passcode or Initializing Code:</p>
     <form (ngSubmit)="submit()" #localForm="ngForm">
-        <mat-form-field (ngSubmit)="submit()">
-            <input matInput [formControl]="code" type="password" class="form-control" [class.is-invalid]="code.invalid && localForm.submitted">
-            <mat-error *ngIf="code.invalid" class="invalid-feedback">
+        <mat-form-field >
+            <input 
+                matInput [formControl]="code" 
+                type="password" 
+                class="form-control"
+                [errorStateMatcher]="myErrorStateMatcher"
+            >
+            <mat-error *ngIf="localForm.submitted" class="invalid-feedback">
                 Code Invalid
             </mat-error>
         </mat-form-field>
