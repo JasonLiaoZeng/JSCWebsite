@@ -20,6 +20,9 @@ import {MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import {MatMenuModule} from '@angular/material/menu';
+import { MenuComponent } from './menu/menu.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     UnlockPageComponent,
     FooterComponent,
     HeroSecComponent,
-    LoginCardComponent
+    LoginCardComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,8 @@
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item color="primary">Chapter 1</button>
+    <button mat-menu-item>Chapter 2</button>
+    <button mat-menu-item>Chapter 3</button>
+    <button mat-menu-item>Chapter 4</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="appMenu" color="Primary"><mat-icon class="title_icon">list</mat-icon></button>
