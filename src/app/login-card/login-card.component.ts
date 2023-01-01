@@ -3,6 +3,7 @@ import { FormControl, Validators, AbstractControl, NgForm} from '@angular/forms'
 import { __values } from 'tslib';
 import { MyErrorStateMatcher } from './my-error-state-matcher';
 import {LoginStatusService} from "../shared/login-status.service";
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login-card',
@@ -20,7 +21,12 @@ export class LoginCardComponent implements OnInit{
     }
   };
 
-  constructor(private status:LoginStatusService){}
+  constructor(
+    private status:LoginStatusService,
+    private route: ActivatedRoute,
+    private router: Router
+    ){
+  }
 
   ngOnInit(){
     this.code = new FormControl('');
@@ -32,6 +38,7 @@ export class LoginCardComponent implements OnInit{
       this.status.sendLoginEvent();
       console.log(this.status.getLoginStatus());
       console.log("Login Success!");
+      this.router.navigate(['logged-in-home-page']);
     }
     else {
       this.status.setLoginStatus(false);
