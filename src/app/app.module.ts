@@ -22,6 +22,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import { MenuComponent } from './menu/menu.component';
+import { LoggedInHomePageComponent } from './logged-in-home-page/logged-in-home-page.component';
+import { CardSession1Component } from './card-session1/card-session1.component';
+import { CardSession2Component } from './card-session2/card-session2.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { MenuComponent } from './menu/menu.component';
     FooterComponent,
     HeroSecComponent,
     LoginCardComponent,
-    MenuComponent
+    MenuComponent,
+    LoggedInHomePageComponent,
+    CardSession1Component,
+    CardSession2Component
   ],
   imports: [
     BrowserModule,

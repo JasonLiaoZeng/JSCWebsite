@@ -1,0 +1,10 @@
+.contents{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
