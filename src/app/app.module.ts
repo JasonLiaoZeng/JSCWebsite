@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import { MenuComponent } from './menu/menu.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { LoggedInHomePageComponent } from './logged-in-home-page/logged-in-home-page.component';
 import { CardSession1Component } from './card-session1/card-session1.component';
 import { CardSession2Component } from './card-session2/card-session2.component';
@@ -32,6 +33,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { Session1LectureComponent } from './session1-lecture/session1-lecture.component';
 import { Session1StudyMaterialsComponent } from './session1-study-materials/session1-study-materials.component';
 import { Session1ProjectComponent } from './session1-project/session1-project.component';
+import { Session1ProjectPopularGamesGridComponent } from './session1-project-popular-games-grid/session1-project-popular-games-grid.component';
 
 
 
@@ -52,7 +54,8 @@ import { Session1ProjectComponent } from './session1-project/session1-project.co
     Session1PageComponent,
     Session1LectureComponent,
     Session1StudyMaterialsComponent,
-    Session1ProjectComponent
+    Session1ProjectComponent,
+    Session1ProjectPopularGamesGridComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +71,8 @@ import { Session1ProjectComponent } from './session1-project/session1-project.co
     FormsModule,
     MatMenuModule,
     MatSidenavModule,
-    MatTabsModule
+    MatTabsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
