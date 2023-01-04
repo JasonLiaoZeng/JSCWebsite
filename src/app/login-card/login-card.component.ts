@@ -35,14 +35,12 @@ export class LoginCardComponent implements OnInit{
   submit(){
     if(this.code.value in this.validCodes.code) {
       this.status.setLoginStatus(true);
-      this.status.sendLoginEvent();
       console.log(this.status.getLoginStatus());
       console.log("Login Success!");
       this.router.navigate(['logged-in-home-page']);
     }
     else {
       this.status.setLoginStatus(false);
-      this.status.sendLoginEvent();
       console.log(this.status.getLoginStatus())
       console.log("Login Failed!");
     }

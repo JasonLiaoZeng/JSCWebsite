@@ -12,6 +12,7 @@ export class LoginStatusService {
 
   setLoginStatus(status:boolean){
     this.loginStatus = status;
+    this.sendLoginEvent();
   }
 
   getLoginStatus(){
