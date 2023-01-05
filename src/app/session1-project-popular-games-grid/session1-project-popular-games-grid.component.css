@@ -1,0 +1,31 @@
+mat-grid-tile{
+    background: url('../../assets/img/hero-sec-1.png') no-repeat center/cover; 
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.among_us{
+    background: url('../../assets/img/among_us.jpg') no-repeat center/cover; 
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
+}
+
+.genshin_impact{
+    background: url('../../assets/img/genshin_impact.jpg') no-repeat left/cover; 
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+}
+
+.pokemon_go{
+    background: url('../../assets/img/pokemon_go.jpg') no-repeat bottom/cover; 
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+.hearthstone{
+    background: url('../../assets/img/hearthstone.jpg') no-repeat center/cover; 
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+}
+
+.fall_guys{
+    background: url("../../assets/img/fall_guys.jpg") no-repeat center/cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+}
