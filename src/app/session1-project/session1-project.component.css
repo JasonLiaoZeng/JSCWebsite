@@ -7,6 +7,19 @@ h2{
     text-decoration: underline;
 }
 
-p{
-    margin-bottom: 50px;
+.important{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img{
+    min-width: 300px;
+    max-width: 600px;
+    height: fit-content;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 }
