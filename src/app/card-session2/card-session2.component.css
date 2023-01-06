@@ -1,19 +1,18 @@
 .example-card {
     width: 400px;
+    height:525px;
+    margin:5px;
     float:left;
-    margin: 5px;
 }
   
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-    
+img {
+    width:400px;
+    height: 350px;
 }
 
 mat-card {
     background-color: #757575;
     color: white;
-    float: left;
 }
 
 mat-card-subtitle {
@@ -23,7 +22,9 @@ mat-card-subtitle {
 button{
     border-color: white;
     border: 2px solid white !important;
-    margin: auto;
+    position: absolute;
+    bottom: 5px;
+    left:130px;
 }
 
 p{
