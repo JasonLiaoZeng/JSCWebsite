@@ -1,0 +1,33 @@
+div{
+    margin: 100px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.important{
+    text-decoration: underline;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+img{
+    min-width: 300px;
+    max-width: 600px;
+    height: fit-content;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.definitionGroup{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-left: 32px;
+}
