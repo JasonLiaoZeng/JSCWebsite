@@ -34,6 +34,10 @@ import { Session1LectureComponent } from './session1-lecture/session1-lecture.co
 import { Session1StudyMaterialsComponent } from './session1-study-materials/session1-study-materials.component';
 import { Session1ProjectComponent } from './session1-project/session1-project.component';
 import { Session1ProjectPopularGamesGridComponent } from './session1-project-popular-games-grid/session1-project-popular-games-grid.component';
+import { Session2PageComponent } from './session2-page/session2-page.component';
+import { Session2LectureComponent } from './session2-lecture/session2-lecture.component';
+import { Session2StudyMaterialsComponent } from './session2-study-materials/session2-study-materials.component';
+import { Session2ProjectComponent } from './session2-project/session2-project.component';
 
 
 
@@ -55,7 +59,11 @@ import { Session1ProjectPopularGamesGridComponent } from './session1-project-pop
     Session1LectureComponent,
     Session1StudyMaterialsComponent,
     Session1ProjectComponent,
-    Session1ProjectPopularGamesGridComponent
+    Session1ProjectPopularGamesGridComponent,
+    Session2PageComponent,
+    Session2LectureComponent,
+    Session2StudyMaterialsComponent,
+    Session2ProjectComponent
   ],
   imports: [
     BrowserModule,

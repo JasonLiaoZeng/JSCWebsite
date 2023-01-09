@@ -13,6 +13,6 @@ export class CardSession2Component {
   }
 
   jumpToSession(){
-    this.router.navigate(['session1-page']);
+    this.router.navigate(['session2-page']);
   }
 }
