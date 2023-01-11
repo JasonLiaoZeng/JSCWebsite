@@ -129,12 +129,9 @@
 
 
     <p class="important">C# - Variable and Array:</p>
-    <p>Again, C# is Higher-Level Object-Oriented Language. Before explaining how primitive type objects are assigned to variables, we 
-        must know its primitive data types, the most basic types that students should know are bool, char, string, int, and float. 
+    <p>Again, C# is higher-level object-oriented language. Before explaining how objects are assigned to variables, we 
+        must know the primitive data types. The most basic types that students should know are bool, char, string, int, and float. 
         Below is some example of assgining each of these types to variable.
-    </p>
-    <p> In C# and many other languages, coders can choose their own variable name, but there are some restrictions. Here are the rules 
-        for choosing variable names:
     </p>
     <div class="code">
         <p class="code">//bool: stores true or false value</p>
@@ -146,7 +143,7 @@
         <p class="code">char c1 = '*';</p>
         <p class="code">char c1 = '5';</p>
         <p></p>
-        <p class="code">//string: stores sequence of characters</p>
+        <p class="code">//string: stores texts</p>
         <p class="code">string s0 = "Hello World";</p>
         <p></p>
         <p class="code">//int: stores integer values</p>
@@ -156,8 +153,42 @@
         <p class="code">int f0 = 0.2;</p>
         <p class="code">int f1 = 2.2;</p>
         <p class="code">int f2 = 2;</p>
-
     </div>
+    <p>
+        On the other hand, arrays are defined as sequence of objects. In C# and other object-oriented languages, elements in an array must
+        be the same type or the children type.(the concept of parent type and children type will be covered later in session 2) Moreover, another important restriction
+        of array is that the size of the array must be known upon declaration. In another word, coders cannot change the size of array, this restriction is for memory protection.
+        Below is some example of how to declare and inititaliz an array.
+    </p>
+    <div class="code">
+        <p class="code">//declaring an array and initialize it at the same time</p>
+        <p class="code">int[] a0 = &#123; 0, 1, 3&#125;;</p>
+        <p></p>
+        <p class="code">//declaring an array without initializing</p>
+        <p class="code">int[] a1 = new int[3];</p>
+        <p></p>
+        <p class="code">//declaring an array and initializing later</p>
+        <p class="code">int[] a2 = new int[3];</p>
+        <p class="code">a2 = &#123; 0, 1, 3&#125;; </p>
+        <p></p>
+        <p class="code">//another way of declaring an array and initializing later</p>
+        <p class="code">int[] a3 = new int[3];</p>
+        <p class="code">a3[0] = 0;</p>
+        <p class="code">a3[1] = 1;</p>
+        <p class="code">a3[2] = 3;</p>
+        <p></p>
+        <p class="code">//declaring an array then partly initialize it</p>
+        <p class="code">int[] a4 = new int[3];</p>
+        <p class="code">a4[0] = 0;</p>
+    </div>
+    <p>
+        There are some more complex concepts about pointers on arrays that is difficult to explain with text, such as what will happen if the coder or program goes out of bound on an array,
+        what will happen if we assign two variable name with the same array, or what if we want an array but we do not know what size will fit. Please attend vedio lecture or watch recorded lecture
+        for more details.
+    </p>
+    <p> Also be noted that in C# and many other programming languages, coders can choose their own variable name, but there are some restrictions. Here are the rules 
+        for choosing variable names:
+    </p>
     <div class="definitionGroup">
         <p style="font-weight: bold;">&#x2022; The name can contain letters, digits, and the underscore character (_).</p>
     </div>
