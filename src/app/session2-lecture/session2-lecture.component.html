@@ -8,8 +8,9 @@
         then start with the basics syntax of C#.
     </p>
 
-    <p class="important">Definitions:</p>
 
+
+    <p class="important">Definitions:</p>
     <div class="definitionGroup">
         <p class="important">
             Higher-Level Language
@@ -19,7 +20,6 @@
             components. Will be compile down to assembly languages. (Java, Python, C++, C#, etc)
         </p>
     </div>
-
     <div class="definitionGroup">
         <p class="important">
            Assembly Language
@@ -30,7 +30,6 @@
             converted into executable machine language. (x86, ARM, MIPS, etc)
         </p>
     </div>
-
     <div class="definitionGroup">
         <p class="important">
             Machine Language
@@ -41,7 +40,6 @@
             (0100001011110111, 0011, 01001000, etc)
         </p>
     </div>
-
     <div class="definitionGroup">
         <p class="important">
             Compiler
@@ -51,7 +49,6 @@
             It's most important usage is to convert a higher-level language such as C# into executable machine code.
         </p>
     </div>
-
     <div class="definitionGroup">
         <p class="important">
             Object-Oriented Programing Language
@@ -61,7 +58,6 @@
             (It is ok if student don't know what this means and how this is significant after reading the lecture page, it will be explained later with examples)
         </p>
     </div>
-
     <div class="definitionGroup">
         <p class="important">
             Primitive Data Type
@@ -71,26 +67,24 @@
         </p>
     </div>
 
-    <p class="important">Computer Architects and Programming Languages:</p>
 
+
+    <p class="important">Computer Architects and Programming Languages:</p>
     <p>
         Upon reading the definition section, student should understand how a higher level programming 
         language like C# turns into executable software. Through compiler, a higher-level language will be compiled into a 
         lower-level language, then eventually the assembly language matching their specific harware, then assembly language
         gets to be turned into machine codes that's executable by their processors.
     </p>
-
     <p>
         In modern days, most codes are written with higher-level languages beacause it is more productive, easier
         to debug, and works well across different hardwares.
     </p>
-
     <p>
         Another feature of many higher level languages to help developement is to be object-oriented. As defined, In 
         an object-oreiented language, coder must explicitly let the compiler know what type of object is attached to a 
         variable name.
     </p>
-
     <p>
         To give a brief example on one of the advantages of object oriented languages, imagine we have 2 objects, a dog object that can bark and a cat
         object that can meow. We now assign the dog object to a variable named Dori and cat object to a variable name Cathy. In an object-oriented language, we let 
@@ -98,7 +92,6 @@
         a non-object-oriented language, we won't tell the compiler that Dori is a dog and Cathy is a cat, so it doesn't know what kind of action they can perform. 
         Such information could be useful when we are developing and debugging.
     </p>
-
     <div class="code">
         <p class="code">// (ObjectOriented) C#</p>
         <p class="code">Dog Dori = new Dog();</p>
@@ -109,30 +102,75 @@
         <p class="code">Cathy = Cat()</p>
     </div>
 
-    <p class="important">Building Blocks of Higher Order Languages:</p>
+
+
+    <p class="important">Building Blocks of Higher Level Coding:</p>
     <p>
         Coding with a higher order language is like constructing a building, it is important to know what building blocks we could use.
         Although each programming language has their unique features and syntax, they are share these building blocks in common. The building blocks 
         shown below is the foundation of higher level coding.
     </p>
-
     <div class="definitionGroup">
         <p style="font-weight: bold;">&#x2022; variable, array</p>
     </div>
-    
     <div class="definitionGroup">
         <p style="font-weight: bold;">&#x2022; if-statement</p>
     </div>
-
     <div class="definitionGroup">
         <p style="font-weight: bold;">&#x2022; for-loop, while-loop</p>
     </div>
-
     <div class="definitionGroup">
         <p style="font-weight: bold;">&#x2022; function</p>
     </div>
-
     <p>
         The meaning and usage of each of these building blocks would be explained below along with C# syntax.
     </p>
+
+
+
+    <p class="important">C# - Variable and Array:</p>
+    <p>Again, C# is Higher-Level Object-Oriented Language. Before explaining how primitive type objects are assigned to variables, we 
+        must know its primitive data types, the most basic types that students should know are bool, char, string, int, and float. 
+        Below is some example of assgining each of these types to variable.
+    </p>
+    <p> In C# and many other languages, coders can choose their own variable name, but there are some restrictions. Here are the rules 
+        for choosing variable names:
+    </p>
+    <div class="code">
+        <p class="code">//bool: stores true or false value</p>
+        <p class="code">bool b0 = true;</p>
+        <p class="code">bool b1 = false;</p>
+        <p></p>
+        <p class="code">//char: stores a single character</p>
+        <p class="code">char c0 = 'A';</p>
+        <p class="code">char c1 = '*';</p>
+        <p class="code">char c1 = '5';</p>
+        <p></p>
+        <p class="code">//string: stores sequence of characters</p>
+        <p class="code">string s0 = "Hello World";</p>
+        <p></p>
+        <p class="code">//int: stores integer values</p>
+        <p class="code">int i0 = 2;</p>
+        <p></p>
+        <p class="code">//float: stores decimal values</p>
+        <p class="code">int f0 = 0.2;</p>
+        <p class="code">int f1 = 2.2;</p>
+        <p class="code">int f2 = 2;</p>
+
+    </div>
+    <div class="definitionGroup">
+        <p style="font-weight: bold;">&#x2022; The name can contain letters, digits, and the underscore character (_).</p>
+    </div>
+    <div class="definitionGroup">
+        <p style="font-weight: bold;">&#x2022; The first character of the name must be a letter. The underscore is also a legal first character, but its use is not recommended at the beginning of a name. An underscore is often used with special commands, and it's sometimes hard to read.</p>
+    </div>
+    <div class="definitionGroup">
+        <p style="font-weight: bold;">&#x2022; Case matters (that is, upper- and lowercase letters). C# is case-sensitive; thus, the names count and Count refer to two different variables.
+
+        </p>
+    </div>
+    <div class="definitionGroup">
+        <p style="font-weight: bold;">&#x2022; C# keywords can't be used as variable names. Recall that a keyword is a word that is part of the C# language. (A complete list of the C# keywords can be found in Appendix B, "C# Keywords.")</p>
+    </div>
+
 </div>
