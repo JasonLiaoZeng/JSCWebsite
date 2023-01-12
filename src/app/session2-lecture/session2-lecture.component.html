@@ -129,7 +129,8 @@
 
 
     <p class="important">C# - Variable and Array:</p>
-    <p>Again, C# is higher-level object-oriented language. Before explaining how objects are assigned to variables, we 
+    <p>
+        Again, C# is higher-level object-oriented language. Before explaining how objects are assigned to variables, we 
         must know the primitive data types. The most basic types that students should know are bool, char, string, int, and float. 
         Below is some example of assgining each of these types to variable.
     </p>
@@ -153,6 +154,31 @@
         <p class="code">int f0 = 0.2;</p>
         <p class="code">int f1 = 2.2;</p>
         <p class="code">int f2 = 2;</p>
+    </div>
+    <p>
+        Moreover, higher level programming languages like C# support mathmatical operations. Down below is the syntax for coding such operations.
+    </p>
+    <div class="code">
+        <p class="code"> int a = 1 + 1;</p>
+        <p class="code">//a = 2</p>
+        <p></p>
+        <p class="code"> int b = a * 2;</p>
+        <p class="code">//a = 2, b = 4</p>
+        <p></p>
+        <p class="code"> a = a - b;</p>
+        <p class="code">//a = -2</p>
+        <p></p>
+        <p class="code"> a += 1;</p>
+        <p class="code">//a = -1</p>
+        <p></p>
+        <p class="code"> a++;</p>
+        <p class="code">//a = 0</p>
+        <p></p>
+        <p class="code"> ++a;</p>
+        <p class="code">//a = 1</p>
+        <p></p>
+        <p class="code">int c = (3 - 1) * 2 + 4 / 2;</p>
+        <p class="code">//c = 6</p>
     </div>
     <p>
         On the other hand, arrays are defined as sequence of objects. In C# and other object-oriented languages, elements in an array must
@@ -203,5 +229,78 @@
     <div class="definitionGroup">
         <p style="font-weight: bold;">&#x2022; C# keywords can't be used as variable names. Recall that a keyword is a word that is part of the C# language. (A complete list of the C# keywords can be found in Appendix B, "C# Keywords.")</p>
     </div>
+    <p>
+        On top of these hard restriction, it is also important to chose meaningful names and follow some kind of conventions. Although the compiler would not complain, having organized and readable code will help both the developer and future code readers.
+    </p>
 
+
+
+    <p class="important"> C# - If-Statement:</p>
+    <p>
+        If-statement is a decision-making statement that guides a program to make decisions based on specified criteria, it allows more than one possible flow of control. The key words that students should know are 
+        'if', 'if else', and 'else', and here are some examples of if-statement in C#: 
+    </p>
+    <div class="code">
+        <p class="code">//Perform action0 function that takes in an empty parameter if condition0 is true</p>
+        <p class="code">if (condition0) &#123;</p>
+        <p class="code">&emsp;action0();</p>
+        <p class="code">&#125;</p>
+        <p></p>
+        <p class="code">//Perform action0 function if condition0 is true</p>
+        <p class="code">//else perform action1 function if condition1 is true</p>
+        <p class="code">//else perform defaultAction</p>
+        <p class="code">if (condition0) &#123;</p>
+        <p class="code">&emsp;action0();</p>
+        <p class="code">&#125; else if (condition1) &#123;</p>
+        <p class="code">&emsp;action1();</p>
+        <p class="code">&#125; else &#123;</p>
+        <p class="code">&emsp;defaultAction();</p>
+        <p class="code">&#125;</p>
+    </div>
+    <p>
+        Noted that the condtion in a if-statement should be a bool value, it could be a bool variable, bool function, or bool operation. Below are some example of if-statements those conditions are
+        bool operations.
+    </p>
+    <div class="code">
+        <p class="code">//For the following examples, assume variables 'a' and 'b' are int</p>
+        <p></p>
+        <p class="code">//Perform action function if 'a' is greater than 'b'</p>
+        <p class="code">if (a > b) &#123;</p>
+        <p class="code">&emsp;action();</p>
+        <p class="code">&#125;</p>
+        <p></p>
+        <p class="code">//Perform action function if 'a' is less than or equal to 'b'</p>
+        <p class="code">if (a &#60;= b) &#123;</p>
+        <p class="code">&emsp;action();</p>
+        <p class="code">&#125;</p>
+        <p></p>
+        <p class="code">//Perform action function if 'a - b' equals to '10'</p>
+        <p class="code">if (a - b == 10) &#123;</p>
+        <p class="code">&emsp;action();</p>
+        <p class="code">&#125;</p>
+        <p></p>
+        <p class="code">//Perform action function if 'a' is not equal to 'b'</p>
+        <p class="code">if (a != 0) &#123;</p>
+        <p class="code">&emsp;action();</p>
+        <p class="code">&#125;</p>
+        <p></p>        
+        <p class="code">//Perform action function if 'a' is an even number</p>
+        <p class="code">if (a % 2 == 0) &#123;</p>
+        <p class="code">&emsp;action();</p>
+        <p class="code">&#125;</p>
+        <p></p>
+        <p class="code">//Perform action function if both 'a' and 'b' are 0</p>
+        <p class="code">if (a == 0 && b == 0) &#123;</p>
+        <p class="code">&emsp;action();</p>
+        <p class="code">&#125;</p>
+        <p></p>
+        <p class="code">//Perform action function if at least 1 of 'a' and 'b' is 0</p>
+        <p class="code">if (a == 0 || b == 0) &#123;</p>
+        <p class="code">&emsp;action();</p>
+        <p class="code">&#125;</p>
+    </div>
+
+
+    <p class="important">C# - For-loop and While-loop</p>
+    <p>Loops are use to execute statements repeatly while a condition is true.</p>
 </div>
