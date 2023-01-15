@@ -36,3 +36,13 @@ video{
     width: 50%;
     word-wrap: break-word;
 }
+
+.cards-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    width: 1000px;
+    height: 560px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}

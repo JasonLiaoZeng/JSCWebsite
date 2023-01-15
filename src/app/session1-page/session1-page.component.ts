@@ -6,8 +6,5 @@ import { LoginStatusService } from '../shared/login-status.service';
   templateUrl: './session1-page.component.html',
   styleUrls: ['./session1-page.component.css']
 })
-export class Session1PageComponent {
-  constructor(status:LoginStatusService){
-    status.setLoginStatus(true);
-  }
+export class Session1PageComponent {  
 }

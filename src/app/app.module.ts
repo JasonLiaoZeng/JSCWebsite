@@ -23,7 +23,6 @@ import { FormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import { MenuComponent } from './menu/menu.component';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { LoggedInHomePageComponent } from './logged-in-home-page/logged-in-home-page.component';
 import { CardSession1Component } from './card-session1/card-session1.component';
 import { CardSession2Component } from './card-session2/card-session2.component';
 import { CardSession3Component } from './card-session3/card-session3.component';
@@ -51,7 +50,6 @@ import { Session2ProjectComponent } from './session2-project/session2-project.co
     HeroSecComponent,
     LoginCardComponent,
     MenuComponent,
-    LoggedInHomePageComponent,
     CardSession1Component,
     CardSession2Component,
     CardSession3Component,

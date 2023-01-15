@@ -14,11 +14,11 @@ export class LoginCardComponent implements OnInit{
   code!: FormControl;
   myErrorStateMatcher = new MyErrorStateMatcher();
 
-  validCodes =  {
-    "code":{
+  
+
+  validCodes:codes =  {
         "Guest": "Guest",
         "990824890": "Jason"
-    }
   };
 
   constructor(
@@ -33,16 +33,20 @@ export class LoginCardComponent implements OnInit{
   }
   
   submit(){
-    if(this.code.value in this.validCodes.code) {
-      this.status.setLoginStatus(true);
+    if(this.code.value in this.validCodes) {
+      this.status.login(true, this.validCodes[this.code.value])
       console.log(this.status.getLoginStatus());
       console.log("Login Success!");
-      this.router.navigate(['logged-in-home-page']);
+      this.router.navigate(['']);
     }
     else {
-      this.status.setLoginStatus(false);
+      this.status.login(false,'404');
       console.log(this.status.getLoginStatus())
       console.log("Login Failed!");
     }
   } 
+}
+
+interface codes {
+  [key: string]: string;
 }

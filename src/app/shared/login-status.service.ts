@@ -6,13 +6,26 @@ import { Subscription, Subject } from 'rxjs';
 })
 export class LoginStatusService {
   loginStatus:boolean;
+  loginName:string;
   private subject = new Subject<any>();
 
-  constructor() { this.loginStatus = false;}
+  constructor() { 
+    this.loginStatus = false;
+    this.loginName="";
+  }
+
+  login(status:boolean, name:string){
+    this.setLoginStatus(status);
+    this.setLoginName(name);
+    this.sendLoginEvent();
+  }
 
   setLoginStatus(status:boolean){
     this.loginStatus = status;
-    this.sendLoginEvent();
+  }
+
+  setLoginName(name:string) {
+    this.loginName = name;
   }
 
   getLoginStatus(){
@@ -25,6 +38,10 @@ export class LoginStatusService {
 
   getLoginEvent() {
     return this.subject.asObservable();
+  }
+
+  getLoginName(){
+    return this.loginName;
   }
 
 }

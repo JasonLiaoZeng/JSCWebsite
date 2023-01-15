@@ -1,5 +1,5 @@
 <app-hero-sec></app-hero-sec>
-<div class = 'contents'>
+<div class = 'contents' *ngIf="!loginStatus">
     <h2>Intro to JSC</h2>
     <div>
         <div class="video_wrapper">
@@ -8,5 +8,12 @@
         <div class="video_aligner">
             test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content test content 
         </div>
+    </div>
+</div>
+<div class="contents" *ngIf="loginStatus">
+    <div fxLayout="row"  fxLayoutGap="12px"  class="cards-wrapper">
+        <app-card-session1></app-card-session1>
+        <app-card-session2></app-card-session2>
+        <app-card-session3></app-card-session3>
     </div>
 </div>

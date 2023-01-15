@@ -1,4 +1,9 @@
-<div class='hero-container'>
+<div class='hero-container'  *ngIf="!loginStatus">
     <h1>ADVENTURE AWAITS</h1>
     <p>What are you waiting for?</p>
+</div>
+
+<div class='hero-container'  *ngIf="loginStatus">
+    <h1>Welcome, <br>
+        {{loginName}}</h1>
 </div>
