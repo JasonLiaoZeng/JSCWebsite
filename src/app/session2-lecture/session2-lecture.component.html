@@ -304,7 +304,71 @@
     <p class="important">C# - For-loop and While-loop</p>
     <p>
         Loops are use to execute statements repeatly while certain crateria is true. For-loop and While-loop are 2 types of loops that 
-        student should understand by this course. The concept of While-loop is simpler of the two, it execute statement repeatedly while 
-        a statement is ture, and here are 2 examples of While-loop:
+        student should understand by this course. The 2 types of loops are similar and can often be replaced with the other, and the concept of While-loop is simpler of the two, it execute statement repeatedly while 
+        a statement is ture, and here is an example of While-loop:
+    </p>
+    <div class="code">
+        <p class="code">//Print "Hello World" to concole 3 times </p>
+        <p class="code">int i = 0; </p>
+        <p class="code">while( i &#60; 3) &#123;</p>
+        <p class="code">&emsp;Console.WriteLine("Hello World"); </p>
+        <p class="code">&emsp;i++; </p>
+        <p class="code">}</p>
+        <p></p>
+    </div>
+    <p>
+        For-loops are are similar to While-loop except that we must provide an initialization in the loop statements. Below is an example and some explanation:
+    </p>
+    <div class="code">
+        <p class="code">//Print "Hello World" to concole 3 times </p>
+        <p class="code">for (int i = 0; i &#60; 3; i++) &#123;</p>
+        <p class="code">&emsp;Console.WriteLine("Hello World"); </p>
+        <p class="code">}</p>
+        <p></p>
+    </div>
+    <p>What logically happened in the above for-loop is that:</p>
+    <div class="definitionGroup">
+        <p>1. 'i' is initialized to 0. 0 is less than 3, so print "Hello World" to console.</p>
+    </div>
+    <div class="definitionGroup">
+        <p>2. 'i' becomes 1 due to loop statement 'i++'. 1 is less than 3, so print "Hello World" to console.</p>
+    </div>
+    <div class="definitionGroup">
+        <p>3. 'i' becomes 2 due to loop statement 'i++'. 2 is less than 3, so print "Hello World" to console.</p>
+    </div>
+    <div class="definitionGroup">
+        <p>4. 'i' becomes 3 due to loop statement 'i++'. 3 is not less than 3, so the loop ends.</p>
+    </div>
+    <p>
+        Something that student should think about is that infinite loops could occur, and this will most likely cause a runtime error depending on the compiler. Below is an example of an infinite loop:
+    </p>
+    <div class="code">
+        <p class="code">//Print "Hello World" to concole infinite times </p>
+        <p class="code">int i = 0; </p>
+        <p class="code">while( true) &#123;</p>
+        <p class="code">&emsp;Console.WriteLine("Hello World"); </p>
+        <p class="code">}</p>
+        <p></p>
+    </div>
+    <p>
+        Loops would be explained again in the vedio lecture, please attend vedio lecture and ask questions on what you do not understand.
+    </p>
+
+
+    <p class="important">C# - functions</p>
+    <p>
+        A function is simply a “chunk” of code that programmers can use over and over again, rather than writing it out multiple times. 
+        Functions enable programmers to break down or decompose a problem into smaller chunks, each of which performs a particular task. 
+        Once a function is created, the details of how it works can almost be forgotten about. 
+        In this way the detail is abstracted, allowing the programmer to focus on the bigger picture.
+    </p>
+    <p>
+        Moreover, a basic function is composed of function return type, function name, parameters, and body. Below is an example with explannation:
+    </p>
+    <div class="img-wrapper">
+        <img src="../../assets/img/C#_function_example.jpg">
+    </div>
+    <p>
+        Do not worry about what is 'public' and 'static' for now, their explanation will be in the next session.
     </p>
 </div>
