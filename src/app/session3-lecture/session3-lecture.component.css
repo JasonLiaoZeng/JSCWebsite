@@ -10,6 +10,7 @@ h2{
 .important{
     text-decoration: underline;
     font-weight: bold;
+    margin-right: 8px;
 }
 
 img{
@@ -23,3 +24,16 @@ img{
     justify-content: center;
     margin: 5px;
 }
+
+.definitionGroup{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    margin-left: 32px;
+}
+
+.code{
+    background-color: blanchedalmond;
+    margin: 0px;
+}
+

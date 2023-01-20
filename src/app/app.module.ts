@@ -37,6 +37,10 @@ import { Session2PageComponent } from './session2-page/session2-page.component';
 import { Session2LectureComponent } from './session2-lecture/session2-lecture.component';
 import { Session2StudyMaterialsComponent } from './session2-study-materials/session2-study-materials.component';
 import { Session2ProjectComponent } from './session2-project/session2-project.component';
+import { Session3PageComponent } from './session3-page/session3-page.component';
+import { Session3LectureComponent } from './session3-lecture/session3-lecture.component';
+import { Session3StudyMaterialsComponent } from './session3-study-materials/session3-study-materials.component';
+import { Session3ProjectComponent } from './session3-project/session3-project.component';
 
 
 
@@ -61,7 +65,11 @@ import { Session2ProjectComponent } from './session2-project/session2-project.co
     Session2PageComponent,
     Session2LectureComponent,
     Session2StudyMaterialsComponent,
-    Session2ProjectComponent
+    Session2ProjectComponent,
+    Session3PageComponent,
+    Session3LectureComponent,
+    Session3StudyMaterialsComponent,
+    Session3ProjectComponent
   ],
   imports: [
     BrowserModule,

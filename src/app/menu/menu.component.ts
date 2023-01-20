@@ -21,4 +21,8 @@ export class MenuComponent {
   jumpToSession2(){
     this.router.navigate(['session2-page']);
   }
+
+  jumpToSession3(){
+    this.router.navigate(['session3-page']);
+  }
 }

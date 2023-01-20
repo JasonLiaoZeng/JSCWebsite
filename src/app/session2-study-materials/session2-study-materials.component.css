@@ -1,0 +1,29 @@
+div{
+    margin: 100px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.important{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img{
+    min-width: 300px;
+    max-width: 600px;
+    height: fit-content;
+}
+
+.img-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+p{
+    text-align: center;
+}
