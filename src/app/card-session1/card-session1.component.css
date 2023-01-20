@@ -13,6 +13,7 @@ img {
 mat-card {
     background-color: #757575;
     color: white;
+    background-size: cover;
 }
 
 mat-card-subtitle {
